@@ -4,6 +4,7 @@
 .cache
 
 .DS_Store
+.pnpm-store
 
 target
 dist
