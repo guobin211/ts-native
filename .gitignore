@@ -2,6 +2,8 @@
 .zed
 .fleet
 .cache
+.xmake
+.zig-cache
 
 .DS_Store
 .pnpm-store
@@ -10,3 +12,4 @@ target
 dist
 build
 node_modules
+zig-out

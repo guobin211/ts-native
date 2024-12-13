@@ -1,0 +1,12 @@
+{
+    "name": "ts-std",
+    "version": "0.1.0",
+    "description": "",
+    "scripts": {},
+    "types": "lib/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/guobin211/ts-native.git"
+    },
+    "private": true
+}

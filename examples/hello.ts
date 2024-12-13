@@ -1,3 +1,3 @@
-import { stdio } from 'std/libc';
+import { stdio } from 'ts-std/libc';
 
 stdio.printf('hello world');

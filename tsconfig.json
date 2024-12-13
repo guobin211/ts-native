@@ -4,10 +4,14 @@
         "module": "ESNext",
         "lib": ["ESNext"],
         "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node",
         "rootDir": ".",
         "baseUrl": ".",
         "paths": {
-            "std/*": ["./std/*"]
+            "ts-compiler/*": ["./crates/ts-std/compiler/*"],
+            "ts-parser/*": ["./crates/ts-std/parser/*"],
+            "ts-runtime/*": ["./crates/ts-std/runtime/*"],
+            "ts-std/*": ["./crates/ts-std/lib/*"]
         }
     }
 }

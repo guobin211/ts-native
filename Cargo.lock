@@ -3,10 +3,6 @@
 version = 3
 
 [[package]]
-name = "ts-c-api"
-version = "0.1.0"
-
-[[package]]
 name = "ts-compiler"
 version = "0.1.0"
 
@@ -16,4 +12,8 @@ version = "0.1.0"
 
 [[package]]
 name = "ts-runtime"
+version = "0.1.0"
+
+[[package]]
+name = "ts-std"
 version = "0.1.0"

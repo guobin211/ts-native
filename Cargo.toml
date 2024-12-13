@@ -1,5 +1,5 @@
 [workspace]
-members = [ "crates/ts-c-api","crates/ts-compiler", "crates/ts-parser", "crates/ts-runtime"]
+members = ["crates/ts-compiler", "crates/ts-parser", "crates/ts-runtime", "crates/ts-std"]
 resolver = "2"
 
 [workspace.dependencies]

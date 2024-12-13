@@ -1,11 +1,19 @@
 {
     "name": "ts-native",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "typescript native compiler",
     "scripts": {
         "test": "cargo test",
         "fmt": "prettier --cache --log-level=warn --write . && cargo fmt",
-        "build:std": "tsx scripts/main.ts --task=std"
+        "build": "tsx build.ts --build",
+        "build:native": "zig build",
+        "build:compiler": "cargo build -p ts-compiler",
+        "build:parser": "cargo build -p ts-parser",
+        "build:runtime": "cargo build -p ts-runtime",
+        "build:std": "cargo build -p ts-std",
+        "run:bin": "tsx build.ts --run",
+        "run:zig": "./zig-out/bin/ts-native --help",
+        "run:rs": "./target/debug/tsnc --help"
     },
     "private": true,
     "devDependencies": {
