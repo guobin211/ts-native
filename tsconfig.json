@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "lib": ["ESNext"],
+        "allowSyntheticDefaultImports": true,
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "std/*": ["./std/*"]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+[package]
+name = "ts-compiler"
+version = "0.1.0"
+edition = "2021"
+description = "typescript native compiler"
+
+[[bin]]
+name = "tsnc"
+path = "src/main.rs"
+
+[dependencies]

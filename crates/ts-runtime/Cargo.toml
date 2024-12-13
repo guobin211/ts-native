@@ -1,0 +1,7 @@
+[package]
+name = "ts-runtime"
+version = "0.1.0"
+edition = "2021"
+description = "typescript native runtime"
+
+[dependencies]

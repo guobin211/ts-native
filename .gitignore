@@ -1,0 +1,11 @@
+.idea
+.zed
+.fleet
+.cache
+
+.DS_Store
+
+target
+dist
+build
+node_modules

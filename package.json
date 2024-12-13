@@ -1,0 +1,15 @@
+{
+    "name": "ts-native",
+    "version": "0.0.1",
+    "description": "typescript native compiler",
+    "scripts": {
+        "test": "cargo test",
+        "fmt": "prettier --cache --log-level=warn --write . && cargo fmt"
+    },
+    "private": true,
+    "devDependencies": {
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.2",
+        "tsx": "^4.19.2"
+    }
+}
