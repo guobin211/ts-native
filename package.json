@@ -4,7 +4,7 @@
     "description": "typescript native compiler",
     "scripts": {
         "test": "cargo test",
-        "fmt": "prettier --cache --log-level=warn --write . && cargo fmt",
+        "fmt": "prettier --log-level=warn --write . && cargo fmt && zig fmt src",
         "build": "tsx build.ts --build",
         "build:native": "zig build",
         "build:compiler": "cargo build -p ts-compiler",

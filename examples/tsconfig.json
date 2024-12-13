@@ -7,7 +7,6 @@
         "allowJs": false,
         "noImplicitAny": true,
         "noEmitHelpers": true,
-        "noLib": true,
         "types": []
     }
 }
