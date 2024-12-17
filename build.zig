@@ -13,13 +13,25 @@ pub fn build(b: *std.Build) void {
     });
 
     b.installArtifact(lib);
-
     const exe = b.addExecutable(.{
         .name = "ts-native",
         .root_source_file = b.path("src/main.zig"),
         .target = target,
         .optimize = optimize,
     });
+    const zap = b.dependency("zap", .{
+        .target = target,
+        .optimize = optimize,
+        .openssl = false, // set to true to enable TLS support
+    });
+    exe.root_module.addImport("zap", zap.module("zap"));
+    const zig_webui = b.dependency("zig-webui", .{
+        .target = target,
+        .optimize = optimize,
+        .enable_tls = false, // whether enable tls support
+        .is_static = true, // whether static link
+    });
+    exe.root_module.addImport("webui", zig_webui.module("webui"));
 
     b.installArtifact(exe);
 
