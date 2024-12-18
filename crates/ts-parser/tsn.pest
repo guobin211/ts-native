@@ -1,0 +1,11 @@
+//
+// Created by intellij-pest on 2024-12-18
+// tsn
+// Author: guobin
+//
+
+TSN_PROGRAM = _{ statement* }
+statement = _{ variable_declaration }
+variable_declaration = _{ "let" ~ identifier ~ ":" ~ type_identifier ~ ";" }
+identifier = _{ ASCII_ALPHA_UPPER | ASCII_ALPHA_LOWER ~ (ASCII_ALPHA_UPPER | ASCII_ALPHA_LOWER | ASCII_DIGIT)* }
+type_identifier = _{ "number" | "string" | "boolean" | "null" | "bigint" }

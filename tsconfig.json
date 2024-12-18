@@ -8,9 +8,9 @@
         "rootDir": ".",
         "baseUrl": ".",
         "paths": {
-            "ts-compiler/*": ["./crates/ts-std/compiler/*"],
-            "ts-parser/*": ["./crates/ts-std/parser/*"],
-            "ts-runtime/*": ["./crates/ts-std/runtime/*"],
+            "ts-compiler/*": ["./crates/ts-compiler/lib/*"],
+            "ts-parser/*": ["./crates/ts-parser/lib/*"],
+            "ts-runtime/*": ["./crates/ts-runtime/lib/*"],
             "ts-std/*": ["./crates/ts-std/lib/*"]
         }
     }
