@@ -15,7 +15,7 @@ stdio.printf('hello world');
 ### Compiler
 
 ```bash
-tsnc ./example.ts --release
+tsn ./example.ts --release
 
 ./example.exe
 ```

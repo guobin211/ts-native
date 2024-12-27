@@ -4,9 +4,5 @@
     "description": "",
     "scripts": {},
     "types": "lib/index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/guobin211/ts-native.git"
-    },
     "private": true
 }
