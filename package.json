@@ -5,26 +5,28 @@
     "scripts": {
         "test": "cargo test",
         "fmt": "prettier --log-level=warn --write . && cargo fmt",
-        "build": "tsx main.ts --build",
+        "build": "cargo build --workspace && tsx main.ts --build",
         "build:native": "cargo build --workspace",
         "build:compiler": "cargo build -p ts-compiler",
         "build:parser": "cargo build -p ts-parser",
         "build:runtime": "cargo build -p ts-runtime",
         "build:std": "cargo build -p ts-std",
-        "run": "tsx main.ts --create",
-        "run:rs": "cargo run -p ts-compiler -- --help"
+        "dev": "tsx main.ts",
+        "dev:compiler": "cargo run -p ts-compiler -- --help"
     },
     "private": true,
     "repository": {
         "type": "git",
         "url": "https://github.com/guobin211/ts-native.git"
     },
+    "type": "module",
     "devDependencies": {
         "prettier": "^3.4.2",
         "tsx": "^4.19.2",
         "typescript": "^5.7.2",
         "@types/node": "^22.10.2",
         "@types/yargs": "^17.0.33",
-        "yargs": "^17.7.2"
+        "yargs": "^17.7.2",
+        "execa": "^9.5.2"
     }
 }
