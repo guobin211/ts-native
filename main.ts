@@ -23,7 +23,7 @@ const printHelp = () => {
 async function main() {
     const args: ArgOptions = await yargs(hideBin(process.argv)).parseAsync();
     if (args.build) {
-        console.log('构建项目: workspace')
+        console.log('构建项目: cargo build --workspace')
         return;
     }
     if (args.create) {
