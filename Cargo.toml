@@ -4,16 +4,21 @@ resolver = "2"
 
 [workspace.dependencies]
 anyhow = "^1.0.93"
+async-trait = "^0.1.85"
+base64 = "^0.22.1"
+deno_core = "^0.330.0"
 env_logger = "^0.11.5"
-envy = "^0.4"
 futures = "0.3.31"
-futures-util = "^0.3.31"
+itertools = "0.14.0"
 lazy_static = "^1.5.0"
 log = "^0.4.22"
-oxc = { version = "*", features = ["full"] }
 proc-macro2 = "^1"
 quote = "^1.0.38"
 rayon = "^1.5.1"
+url = "2.5.4"
+json5 = "0.4.1"
+oxc = { version = "^0.44.0", features = ["full"] }
+reqwest = { version = "^0.12.12", features = ["json", "stream", "multipart", "socks", "cookies"]}
 serde_json = "^1.0.133"
 serde = { version = "^1.0.133", features = ["derive"] }
 tokio = { version = "^1", features = ["full"] }

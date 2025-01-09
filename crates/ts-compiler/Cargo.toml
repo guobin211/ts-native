@@ -9,3 +9,7 @@ name = "tsnc"
 path = "src/main.rs"
 
 [dependencies]
+anyhow = { workspace = true }
+oxc = { workspace = true}
+rayon = { workspace = true }
+tokio = { workspace = true }

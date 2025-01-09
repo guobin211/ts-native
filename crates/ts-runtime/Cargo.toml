@@ -5,3 +5,6 @@ edition = "2021"
 description = "typescript native runtime"
 
 [dependencies]
+anyhow = { workspace = true }
+deno_core = { workspace = true }
+tokio = { workspace = true }

@@ -5,3 +5,7 @@ edition = "2021"
 description = "typescript native ast parser"
 
 [dependencies]
+anyhow = { workspace = true }
+oxc = { workspace = true}
+rayon = { workspace = true }
+tokio = { workspace = true }
