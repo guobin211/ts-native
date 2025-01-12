@@ -30,6 +30,14 @@ importers:
         specifier: ^17.7.2
         version: 17.7.2
 
+  crates/ts-compiler: {}
+
+  crates/ts-parser: {}
+
+  crates/ts-runtime: {}
+
+  crates/ts-std: {}
+
 packages:
 
   '@esbuild/aix-ppc64@0.23.1':

@@ -1,3 +1,8 @@
 {
-    "words": ["comptime", "libc", "libc", "Parens"]
+    "words": [
+        "comptime",
+        "execa",
+        "libc",
+        "Parens"
+    ]
 }
