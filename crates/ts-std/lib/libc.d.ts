@@ -2,7 +2,11 @@ export interface Stdio {
     /**
      * 打印输出
      */
-    printf: (arg: string) => void;
+    printf: (arg: string, ...args: ToString[]) => void;
+}
+
+interface ToString {
+    toString(): string;
 }
 
 export interface Stdlib {
