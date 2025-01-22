@@ -7,9 +7,9 @@ typescript native script, use llvm compile to native code
 > touch example.ts
 
 ```ts
-import { stdio } from 'libc';
+import { stdio } from 'libc'
 
-stdio.printf('hello world');
+stdio.printf('hello world')
 ```
 
 ### Compiler

@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/ts-compiler", "crates/ts-parser", "crates/ts-runtime", "crates/ts-std"]
+members = ["crates/ts-compiler", "crates/ts-runtime", "crates/ts-std"]
 resolver = "2"
 
 [workspace.dependencies]
@@ -19,7 +19,7 @@ rayon = "^1.5.1"
 url = "2.5.4"
 json5 = "0.4.1"
 llvm-sys = "191.0.0"
-oxc = { version = "^0.44.0", features = [] }
+oxc = { version = "^0.44.0", features = ["codegen", "semantic", "transformer"] }
 reqwest = { version = "^0.12.12", features = ["json", "stream", "multipart", "socks", "cookies"]}
 serde_json = "^1.0.133"
 serde = { version = "^1.0.133", features = ["derive"] }

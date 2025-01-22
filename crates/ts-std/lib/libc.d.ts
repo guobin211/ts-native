@@ -1,25 +1,8 @@
-export interface Stdio {
-    /**
-     * 打印输出
-     */
-    printf: (arg: string, ...args: ToString[]) => void;
-}
-
-interface ToString {
-    toString(): string;
-}
-
-export interface Stdlib {
-    exit(code: number): void;
-}
-
-export interface Time {
-    time(t?: number | null): number;
-}
-
-export interface Math {
-    cos(angle: number): number;
-}
+import { Stdio } from './libc.stdio';
+import { Stdlib } from './libc.stdlib';
+import { Math } from './libc.math';
+import { Time } from './libc.time';
+import { CString } from './libc.string';
 
 /**
  * 标准输入输出
@@ -40,3 +23,9 @@ export declare const stdlib: Stdlib;
  * 数学函数
  */
 export declare const math: Math;
+
+
+/**
+ * 字符串处理
+ */
+export declare const cstring: CString;
