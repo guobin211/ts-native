@@ -1,5 +1,3 @@
-#![feature(const_option)]
-
 use ts_compiler::parse_ts;
 
 fn main() {
